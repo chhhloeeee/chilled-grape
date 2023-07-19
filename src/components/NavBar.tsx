@@ -30,7 +30,6 @@ const NavBar = ({ className }: NavBarProps) => {
 
 const StyledNavBar = styled(NavBar)`
   overflow: hidden;
-  background-color: white;
   position: fixed;
   top: 50px;
   width: 100%;
