@@ -80,7 +80,7 @@ const StyledHero = styled(Hero)`
     width: 566.702px;
     height: 516.965px;
     top: 250px;
-    right: -160px;
+    right: -180px;
     z-index: auto;
   }
   img:nth-of-type(3) {
@@ -93,7 +93,7 @@ const StyledHero = styled(Hero)`
     width: 427.407px;
     height: 319.137px;
     transform: rotate(10deg);
-    top: 430px;
+    top: 450px;
     left: 1030px;
   }
 `;
