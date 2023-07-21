@@ -1,16 +1,15 @@
+import PageSectionTextWrapper from "./pageSection/PageSectionTextWrapper";
+
 const MainContent = () => {
   return (
     <div>
-      <div>
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-        <button>Read More</button>
-      </div>
+      <PageSectionTextWrapper
+        title="Lorem ipsum dolor sit amet."
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+         consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum 
+         dolor sit amet, consectetur adipiscing elit."
+        bttnText="Read More"
+      />
     </div>
   );
 };
