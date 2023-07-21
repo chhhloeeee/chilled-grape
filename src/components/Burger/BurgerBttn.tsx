@@ -6,7 +6,7 @@ export const BurgerBttn = styled.button`
   @media (max-width: 1200px) {
     position: absolute;
     top: 5%;
-    right: 2rem;
+    right: 71px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -31,5 +31,8 @@ export const BurgerBttn = styled.button`
       position: relative;
       transform-origin: 1px;
     }
+  }
+  @media (max-width: 1000px) {
+    right: 25px;
   }
 `;

@@ -20,10 +20,11 @@ const NavBar = ({ className }: NavBarProps) => {
     margin: 0;
     list-style-type: none;
     float: right;
-    padding-right: 71px;
+    padding: 40px;
     @media (max-width: 1200px) {
       display: ${openBurger ? "flex" : "none"};
-      background-color: #eaf9f4;
+      background-color: #eff4fa;
+      transition: 2s ease;
       height: 100vh;
       width: 50%;
       flex-direction: column;
@@ -31,7 +32,6 @@ const NavBar = ({ className }: NavBarProps) => {
       position: absolute;
       top: 0;
       right: 0;
-      transition: 0.25s ease;
       li:last-of-type {
         margin-top: 1.5rem;
         width: 300px;
@@ -51,6 +51,10 @@ const NavBar = ({ className }: NavBarProps) => {
         text-decoration: none;
         transition: color 0.3s linear;
       }
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 0;
     }
   `;
   return (
@@ -79,10 +83,7 @@ const NavBar = ({ className }: NavBarProps) => {
   );
 };
 
-interface StyledNavBarProps {
-  $openBurger?: boolean;
-}
-const StyledNavBar = styled(NavBar)<StyledNavBarProps>`
+const StyledNavBar = styled(NavBar)`
   overflow: hidden;
   position: fixed;
   top: 50px;
@@ -96,9 +97,6 @@ const StyledNavBar = styled(NavBar)<StyledNavBarProps>`
 
   li {
     float: left;
-  }
-
-  ul {
   }
 
   a {

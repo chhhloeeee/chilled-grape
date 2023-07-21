@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import NavBar from "./NavBar";
-import StyledBackground from "./Backbround";
+import StyledBackground from "./Background";
 
 interface HeroProps {
   className?: string;
@@ -27,13 +27,19 @@ const StyledHero = styled(Hero)`
   overflow: hidden;
   height: 100vh;
   margin: 0;
-  div {
-    h2 {
-      padding-top: 6px;
-      padding-left: 69px;
-      font-size: 36px;
-      font-weight: 700;
-      color: white;
+  h2 {
+    padding-top: 6px;
+    padding-left: 69px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    @media (max-width: 1000px) {
+      font-size: 30px;
+      padding-left: 25px;
+    }
+    @media (max-width: 600px) {
+      font-size: 25px;
+      padding-left: 25px;
     }
   }
   div:nth-of-type(2) {
@@ -64,6 +70,17 @@ const StyledHero = styled(Hero)`
       }
       button {
         margin-left: 10%;
+      }
+    }
+    @media (max-width: 1000px) {
+      h1 {
+        font-size: 46px;
+        width: 450px;
+      }
+      button {
+        font-size: 18px;
+        width: 175px;
+        height: 40px;
       }
     }
   }
