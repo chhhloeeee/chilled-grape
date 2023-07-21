@@ -4,8 +4,8 @@ export const BurgerBttn = styled.button`
   display: none;
 
   @media (max-width: 1200px) {
-    position: absolute;
-    top: 5%;
+    position: fixed;
+    top: 50px;
     right: 71px;
     display: flex;
     flex-direction: column;
@@ -34,5 +34,9 @@ export const BurgerBttn = styled.button`
   }
   @media (max-width: 1000px) {
     right: 25px;
+    top: 37px;
+  }
+  @media (max-width: 600px) {
+    top: 30px;
   }
 `;

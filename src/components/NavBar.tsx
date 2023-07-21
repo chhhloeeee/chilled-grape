@@ -20,9 +20,10 @@ const NavBar = ({ className }: NavBarProps) => {
     margin: 0;
     list-style-type: none;
     float: right;
-    padding: 40px;
+    padding-right: 71px;
     @media (max-width: 1200px) {
       display: ${openBurger ? "flex" : "none"};
+      margin: 0;
       background-color: #eff4fa;
       transition: 2s ease;
       height: 100vh;
@@ -30,10 +31,11 @@ const NavBar = ({ className }: NavBarProps) => {
       flex-direction: column;
       justify-content: center;
       position: absolute;
+      margin: 0;
       top: 0;
       right: 0;
       li:last-of-type {
-        margin-top: 1.5rem;
+        margin: 0;
         width: 300px;
         height: 60px;
       }
@@ -41,13 +43,14 @@ const NavBar = ({ className }: NavBarProps) => {
         display: flex;
         align-items: center;
         width: 100%;
+        margin: 1.5rem 2rem;
         border-bottom: 1px solid grey;
       }
       li,
       a {
         font-size: 36px;
         text-transform: uppercase;
-        margin: 1.5rem 2rem;
+
         text-decoration: none;
         transition: color 0.3s linear;
       }
@@ -55,6 +58,7 @@ const NavBar = ({ className }: NavBarProps) => {
     @media (max-width: 600px) {
       width: 100%;
       padding: 0;
+      margin: 0;
     }
   `;
   return (
