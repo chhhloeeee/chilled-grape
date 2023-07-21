@@ -94,7 +94,7 @@ const StyledBackground = styled(Background)`
       transform: rotate(-5deg);
     }
     top: 370px;
-    left: 665px;
+    left: 39.5%;
     z-index: -5;
   }
   div:nth-of-type(2) {

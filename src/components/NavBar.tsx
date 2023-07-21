@@ -1,13 +1,61 @@
 import { styled } from "styled-components";
+import Burger from "./Burger/Burger";
+import { useState } from "react";
 
 interface NavBarProps {
   className?: string;
 }
 
 const NavBar = ({ className }: NavBarProps) => {
+  const [openBurger, setOpenBurger] = useState(true);
+
+  const toggleOpenBurger = () => {
+    console.log(openBurger, "value");
+    setOpenBurger(!openBurger);
+  };
+
+  const StyledUl = styled.ul`
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style-type: none;
+    float: right;
+    padding-right: 71px;
+    @media (max-width: 1200px) {
+      display: ${openBurger ? "flex" : "none"};
+      background-color: #eaf9f4;
+      height: 100vh;
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.25s ease;
+      li:last-of-type {
+        margin-top: 1.5rem;
+        width: 300px;
+        height: 60px;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid grey;
+      }
+      li,
+      a {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 1.5rem 2rem;
+        text-decoration: none;
+        transition: color 0.3s linear;
+      }
+    }
+  `;
   return (
     <div className={className}>
-      <ul>
+      <StyledUl>
         <li>
           <a href="#home">Home</a>
         </li>
@@ -23,12 +71,18 @@ const NavBar = ({ className }: NavBarProps) => {
         <li>
           <a href="#login">Login</a>
         </li>
-      </ul>
+      </StyledUl>
+      <div onClick={toggleOpenBurger}>
+        <Burger />
+      </div>
     </div>
   );
 };
 
-const StyledNavBar = styled(NavBar)`
+interface StyledNavBarProps {
+  $openBurger?: boolean;
+}
+const StyledNavBar = styled(NavBar)<StyledNavBarProps>`
   overflow: hidden;
   position: fixed;
   top: 50px;
@@ -36,17 +90,15 @@ const StyledNavBar = styled(NavBar)`
   text-align: center;
   color: #212121;
 
+  @media (max-width: 1200px) {
+    position: static;
+  }
+
   li {
     float: left;
   }
 
   ul {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    list-style-type: none;
-    float: right;
-    padding-right: 71px;
   }
 
   a {
