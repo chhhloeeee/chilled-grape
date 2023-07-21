@@ -61,5 +61,14 @@ const StyledHero = styled(Hero)`
     color: white;
     margin-left: 364px;
   }
+
+  @media (max-width: 1550px) {
+    h1 {
+      padding-left: 10%;
+    }
+    button {
+      margin-left: 10%;
+    }
+  }
 `;
 export default StyledHero;

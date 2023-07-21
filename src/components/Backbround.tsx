@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import BlueSplodge from "./Images/BlueSplodge.svg";
 import BlueSplodgeTwo from "./Images/BlueSplodgeTwo.svg";
 import BlueSplodgeThree from "./Images/BlueSplodgeThree.svg";
+import { motion } from "framer-motion";
 
 interface BackgroundProps {
   className?: string;
@@ -12,14 +13,62 @@ const Background = ({ className }: BackgroundProps) => {
     <div className={className}>
       <img src={BlueSplodge} alt="Splodge 1"></img>
       <img src={BlueSplodge} alt="Splodge 2"></img>
-      <img src={BlueSplodgeThree} alt="Splodge 3"></img>
-      <img src={BlueSplodgeTwo} alt="Splodge 4"></img>
-      <img src={BlueSplodgeTwo} alt="Splodge 5"></img>
+      <motion.div
+        animate="initial"
+        variants={{
+          initial: {
+            y: [-10, 10],
+            transition: {
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          },
+        }}
+      >
+        <img src={BlueSplodgeThree} alt="Splodge 3"></img>
+      </motion.div>
+      <motion.div
+        animate="initial"
+        variants={{
+          initial: {
+            y: [-20, 20],
+            x: [-10, 10],
+            transition: {
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          },
+        }}
+      >
+        <img src={BlueSplodgeTwo} alt="Splodge 4"></img>
+      </motion.div>
+      <motion.div
+        animate="initial"
+        variants={{
+          initial: {
+            y: [-5, 5],
+            x: [-10, 10],
+            transition: {
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          },
+        }}
+      >
+        <img src={BlueSplodgeTwo} alt="Splodge 5"></img>
+      </motion.div>
     </div>
   );
 };
 
 const StyledBackground = styled(Background)`
+  div {
+    padding: none;
+    position: absolute;
+  }
   img {
     position: absolute;
     z-index: -1;
@@ -38,27 +87,34 @@ const StyledBackground = styled(Background)`
     top: 200px;
     right: -220px;
   }
-  img:nth-of-type(3) {
-    width: 332.693px;
-    height: 258.906px;
-    top: 120px;
-    left: 590px;
+  div:nth-of-type(1) {
+    img {
+      width: 332.693px;
+      height: 258.906px;
+      transform: rotate(-5deg);
+    }
+    top: 370px;
+    left: 665px;
     z-index: -5;
   }
-  img:nth-of-type(4) {
-    width: 427.407px;
-    height: 319.137px;
-    transform: rotate(10deg);
-    top: 450px;
-    right: 120px;
+  div:nth-of-type(2) {
+    img {
+      width: 427.407px;
+      height: 319.137px;
+      transform: rotate(10deg);
+    }
+    top: 670px;
+    right: 500px;
     z-index: -5;
   }
-  img:nth-of-type(5) {
-    width: 372.814px;
-    height: 336.49px;
-    transform: rotate(45deg);
-    top: 450px;
-    left: -170px;
+  div:nth-of-type(3) {
+    img {
+      width: 372.814px;
+      height: 336.49px;
+      transform: rotate(45deg);
+    }
+    top: 700px;
+    left: -100px;
     z-index: -5;
   }
 `;
