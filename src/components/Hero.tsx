@@ -39,7 +39,10 @@ const StyledHero = styled(Hero)`
     }
     @media (max-width: 600px) {
       font-size: 25px;
-      padding-left: 25px;
+      padding-left: 15px;
+    }
+    @media (max-width: 450px) {
+      font-size: 20px;
     }
   }
   div:nth-of-type(2) {
@@ -81,6 +84,18 @@ const StyledHero = styled(Hero)`
         font-size: 18px;
         width: 175px;
         height: 40px;
+      }
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+        width: 350px;
+      }
+    }
+    @media (max-width: 450px) {
+      h1 {
+        font-size: 28px;
+        width: 280px;
       }
     }
   }

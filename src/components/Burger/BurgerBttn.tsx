@@ -38,5 +38,6 @@ export const BurgerBttn = styled.button`
   }
   @media (max-width: 600px) {
     top: 30px;
+    right: 15px;
   }
 `;

@@ -60,6 +60,16 @@ const NavBar = ({ className }: NavBarProps) => {
       padding: 0;
       margin: 0;
     }
+    @media (max-width: 450px) {
+      a {
+        font-size: 20px;
+      }
+      li:last-of-type {
+        margin: 0;
+        width: 150px;
+        height: 30px;
+      }
+    }
   `;
   return (
     <div className={className}>

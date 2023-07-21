@@ -17,7 +17,7 @@ const Background = ({ className }: BackgroundProps) => {
         animate="initial"
         variants={{
           initial: {
-            //   y: [-10, 10],
+            y: [-10, 10],
             transition: {
               duration: 2,
               repeat: Infinity,
@@ -32,8 +32,8 @@ const Background = ({ className }: BackgroundProps) => {
         animate="initial"
         variants={{
           initial: {
-            //  y: [-20, 20],
-            //  x: [-10, 10],
+            y: [-20, 20],
+            x: [-10, 10],
             transition: {
               duration: 2,
               repeat: Infinity,
@@ -48,8 +48,8 @@ const Background = ({ className }: BackgroundProps) => {
         animate="initial"
         variants={{
           initial: {
-            // y: [-5, 5],
-            // x: [-10, 10],
+            y: [-5, 5],
+            x: [-10, 10],
             transition: {
               duration: 2,
               repeat: Infinity,
@@ -83,6 +83,10 @@ const StyledBackground = styled(Background)`
       width: 400px;
       height: 400px;
     }
+    @media (max-width: 600px) {
+      width: 360px;
+      height: 350px;
+    }
   }
   img:nth-of-type(2) {
     transform: rotate(-140.257deg);
@@ -93,6 +97,13 @@ const StyledBackground = styled(Background)`
     @media (max-width: 1000px) {
       width: 400px;
       height: 400px;
+      top: 300px;
+      right: -180px;
+    }
+    @media (max-width: 600px) {
+      width: 300px;
+      height: 300px;
+      right: -140px;
     }
   }
   div:nth-of-type(1) {
@@ -111,6 +122,13 @@ const StyledBackground = styled(Background)`
       }
       left: 34.5%;
     }
+    @media (max-width: 600px) {
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      left: 45%;
+    }
   }
   div:nth-of-type(2) {
     img {
@@ -126,8 +144,16 @@ const StyledBackground = styled(Background)`
         width: 300px;
         height: 300px;
       }
-      top: 600px;
+      top: 680px;
       right: 280px;
+    }
+    @media (max-width: 600px) {
+      img {
+        width: 240px;
+        height: 240px;
+      }
+      top: 630px;
+      right: 200px;
     }
   }
   div:nth-of-type(3) {
@@ -144,7 +170,16 @@ const StyledBackground = styled(Background)`
         width: 300px;
         height: 300px;
       }
-      top: 600px;
+      top: 730px;
+      left: -20px;
+    }
+    @media (max-width: 1000px) {
+      img {
+        width: 250px;
+        height: 250px;
+      }
+      top: 760px;
+      left: -30px;
     }
   }
 `;
