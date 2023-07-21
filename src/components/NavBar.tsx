@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import Burger from "./Burger/Burger";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import scrollDir from "scrolldir";
 
 interface NavBarProps {
   className?: string;
@@ -13,6 +14,10 @@ const NavBar = ({ className }: NavBarProps) => {
     console.log(openBurger, "value");
     setOpenBurger(!openBurger);
   };
+
+  useEffect(() => {
+    scrollDir({ dir: "up" });
+  }, []);
 
   const StyledUl = styled.ul`
     display: flex;
@@ -107,6 +112,13 @@ const StyledNavBar = styled(NavBar)`
 
   @media (max-width: 1200px) {
     position: static;
+  }
+
+  [data-scrolldir="down"] & {
+    top: 0;
+    padding: 20px 0;
+    background-color: white;
+    transition: 0.25s ease;
   }
 
   li {
