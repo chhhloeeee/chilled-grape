@@ -22,7 +22,9 @@ const Hero = ({ className }: HeroProps) => {
 };
 
 const StyledHero = styled(Hero)`
+  position: relative;
   overflow: hidden;
+  height: 100vh;
   margin: 0;
   div {
     h2 {
@@ -58,9 +60,6 @@ const StyledHero = styled(Hero)`
     font-weight: 600;
     color: white;
     margin-left: 364px;
-  }
-  ${StyledBackground} {
-    background-size: cover;
   }
 `;
 export default StyledHero;

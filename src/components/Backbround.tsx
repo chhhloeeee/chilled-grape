@@ -20,7 +20,6 @@ const Background = ({ className }: BackgroundProps) => {
 };
 
 const StyledBackground = styled(Background)`
-  width: 100%;
   img {
     position: absolute;
     z-index: -1;
