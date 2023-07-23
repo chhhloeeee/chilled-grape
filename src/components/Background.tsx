@@ -11,8 +11,8 @@ interface BackgroundProps {
 const Background = ({ className }: BackgroundProps) => {
   return (
     <div className={className}>
-      <img src={BlueSplodge} alt="Splodge 1"></img>
-      <img src={BlueSplodge} alt="Splodge 2"></img>
+      <img src={BlueSplodge} alt="Splodge 1" />
+      <img src={BlueSplodge} alt="Splodge 2" />
       <motion.div
         animate="initial"
         variants={{
@@ -26,7 +26,7 @@ const Background = ({ className }: BackgroundProps) => {
           },
         }}
       >
-        <img src={BlueSplodgeThree} alt="Splodge 3"></img>
+        <img src={BlueSplodgeThree} alt="Splodge 3" />
       </motion.div>
       <motion.div
         animate="initial"
@@ -42,7 +42,7 @@ const Background = ({ className }: BackgroundProps) => {
           },
         }}
       >
-        <img src={BlueSplodgeTwo} alt="Splodge 4"></img>
+        <img src={BlueSplodgeTwo} alt="Splodge 4" />
       </motion.div>
       <motion.div
         animate="initial"
@@ -58,7 +58,7 @@ const Background = ({ className }: BackgroundProps) => {
           },
         }}
       >
-        <img src={BlueSplodgeTwo} alt="Splodge 5"></img>
+        <img src={BlueSplodgeTwo} alt="Splodge 5" />
       </motion.div>
     </div>
   );
