@@ -32,21 +32,25 @@ const NavBar = ({ className }: NavBarProps) => {
       background-color: #eff4fa;
       transition: 2s ease;
       height: 100vh;
-      width: 50%;
+      width: 100%;
       flex-direction: column;
       justify-content: center;
-      position: absolute;
+      position: fixed;
+      z-index: 1;
       margin: 0;
+      padding: 0;
       right: 0;
+      top: 0;
       li:last-of-type {
         margin: 0;
+        margin-top: 40px;
         width: 300px;
         height: 60px;
       }
       li {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 80%;
         margin: 1.5rem 2rem;
         border-bottom: 1px solid grey;
       }
@@ -58,11 +62,6 @@ const NavBar = ({ className }: NavBarProps) => {
         text-decoration: none;
         transition: color 0.3s linear;
       }
-    }
-    @media (max-width: 600px) {
-      width: 100%;
-      padding: 0;
-      margin: 0;
     }
     @media (max-width: 450px) {
       a {
