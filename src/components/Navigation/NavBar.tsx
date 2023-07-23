@@ -37,7 +37,6 @@ const NavBar = ({ className }: NavBarProps) => {
       justify-content: center;
       position: absolute;
       margin: 0;
-      top: 0;
       right: 0;
       li:last-of-type {
         margin: 0;

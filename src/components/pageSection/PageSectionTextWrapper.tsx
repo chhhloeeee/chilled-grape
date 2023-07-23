@@ -23,14 +23,13 @@ const PageSectionTextWrapper = ({
 };
 
 const StyledPageSectionTextWrapper = styled(PageSectionTextWrapper)`
-  max-width: 50%;
+  width: 50%;
   h2 {
     font-size: 36px;
     text-transform: uppercase;
-    width: 523px;
+    width: 80%;
   }
   p {
-    width: 643px;
     font-size: 24px;
     padding-bottom: 20px;
   }
@@ -47,6 +46,12 @@ const StyledPageSectionTextWrapper = styled(PageSectionTextWrapper)`
     border: none;
     font-size: 16px;
     font-weight: 600;
+  }
+  @media (max-width: 1000px) {
+    width: 70%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `;
 
