@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import NavBar from "./Navigation/NavBar";
-import StyledBackground from "./Background";
+import Background from "./Background";
 
 interface HeroProps {
   className?: string;
@@ -17,7 +17,7 @@ const Hero = ({ className }: HeroProps) => {
         <h1>LOREM IPSUM DOLOR SIT AMET.</h1>
         <button>Read More</button>
       </div>
-      <StyledBackground />
+      <Background />
     </div>
   );
 };

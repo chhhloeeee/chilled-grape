@@ -1,8 +1,11 @@
+import PageSectionImgWrapper from "./pageSection/PageSectionImgWrapper";
 import PageSectionTextWrapper from "./pageSection/PageSectionTextWrapper";
+import Plant from "./Images/plant.png";
+import PageSection from "./pageSection/PageSection";
 
 const MainContent = () => {
   return (
-    <div>
+    <PageSection>
       <PageSectionTextWrapper
         title="Lorem ipsum dolor sit amet."
         content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
@@ -10,7 +13,8 @@ const MainContent = () => {
          dolor sit amet, consectetur adipiscing elit."
         bttnText="Read More"
       />
-    </div>
+      <PageSectionImgWrapper image={Plant} />
+    </PageSection>
   );
 };
 
