@@ -8148,6 +8148,11 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.1.0"
 
+scrolldir@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/scrolldir/-/scrolldir-1.5.3.tgz#0251a9f2b90de23dfe507990ba7f0c3a7bc0fa47"
+  integrity sha512-nxxGrQSQglKuAuQ3frCdpFI7F8UJc5fY9+s1ai62Fe1IIq8g9HHW0McLpzINHwi4QzYDehY+cvvdjTCqRlv6bw==
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
