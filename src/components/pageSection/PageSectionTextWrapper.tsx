@@ -50,6 +50,9 @@ const StyledPageSectionTextWrapper = styled(PageSectionTextWrapper)`
   @media (max-width: 1000px) {
     width: 70%;
   }
+  @media (max-width: 750px) {
+    width: 90%;
+  }
   @media (max-width: 600px) {
     width: 100%;
   }

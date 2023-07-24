@@ -26,6 +26,7 @@ const StyledAbout = styled(About)`
   position: relative;
   min-height: 500px;
   color: #fff;
+
   img {
     position: absolute;
     width: 726.325px;
