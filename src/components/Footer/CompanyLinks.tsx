@@ -45,6 +45,7 @@ const StyledCompanyLinks = styled(CompanyLinks)`
     text-align: justify;
     font-size: 18px;
     font-weight: 400;
+    padding: 6px;
   }
 `;
 
