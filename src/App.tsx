@@ -7,7 +7,6 @@ function App() {
     <div>
       <Hero />
       <MainContent />
-      <MainContent />
       <Footer />
     </div>
   );
