@@ -39,7 +39,7 @@ const StyledPageSectionImgWrapper = styled(PageSectionImgWrapper)`
     }
   }
   @media (max-width: 1000px) {
-    padding-top: 50px;
+    padding-top: 10px;
     float: right;
   }
   @media (max-width: 600px) {

@@ -10,11 +10,11 @@ const Hero = ({ className }: HeroProps) => {
   return (
     <div className={className}>
       <div>
-        <h2>CHILLED GRAPE</h2>
+        <h2>Chilled Grape</h2>
         <NavBar />
       </div>
       <div>
-        <h1>LOREM IPSUM DOLOR SIT AMET.</h1>
+        <h1>Lorem Ipsum Dolor Sit Amet.</h1>
         <button>Read More</button>
       </div>
       <Background />
@@ -33,6 +33,7 @@ const StyledHero = styled(Hero)`
     font-size: 36px;
     font-weight: 700;
     color: white;
+    text-transform: uppercase;
     @media (max-width: 1000px) {
       font-size: 30px;
       padding-left: 25px;
@@ -51,6 +52,7 @@ const StyledHero = styled(Hero)`
       width: 600px;
       margin: 0;
       font-size: 64px;
+      text-transform: uppercase;
     }
     button {
       border-radius: 100px;

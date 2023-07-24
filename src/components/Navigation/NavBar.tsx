@@ -107,6 +107,7 @@ const StyledNavBar = styled(NavBar)`
   width: 100%;
   text-align: center;
   color: #212121;
+  z-index: 10;
 
   @media (max-width: 1200px) {
     position: static;

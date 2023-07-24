@@ -23,11 +23,11 @@ const PageSectionTextWrapper = ({
 };
 
 const StyledPageSectionTextWrapper = styled(PageSectionTextWrapper)`
-  width: 50%;
+  width: 45%;
   h2 {
     font-size: 36px;
     text-transform: uppercase;
-    width: 80%;
+    width: 70%;
   }
   p {
     font-size: 24px;
@@ -49,6 +49,9 @@ const StyledPageSectionTextWrapper = styled(PageSectionTextWrapper)`
   }
   @media (max-width: 1000px) {
     width: 70%;
+  }
+  @media (max-width: 750px) {
+    width: 90%;
   }
   @media (max-width: 600px) {
     width: 100%;
