@@ -50,6 +50,36 @@ const StyledAbout = styled(About)`
       width: 459px;
     }
   }
+  @media (max-width: 600px) {
+    min-height: 250px;
+    img {
+      width: 626.325px;
+      height: 441.859px;
+    }
+    > div {
+      padding-left: 20px;
+      position: absolute;
+      bottom: 5px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+        width: 350px;
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    > div {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        width: 300px;
+      }
+    }
+  }
 `;
 
 export default StyledAbout;

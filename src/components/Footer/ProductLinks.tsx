@@ -47,6 +47,9 @@ const StyledProductLinks = styled(ProductLinks)`
     font-weight: 400;
     padding: 6px;
   }
+  @media (max-width: 1200px) {
+    padding-bottom: 20px;
+  }
 `;
 
 export default StyledProductLinks;

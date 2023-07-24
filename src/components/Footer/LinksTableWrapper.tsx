@@ -11,4 +11,13 @@ export const LinksTableWrapper = styled.div`
   text-align: left;
   margin-right: 60px;
   padding-top: 200px;
+  @media (max-width: 1373px) {
+    grid-gap: 40px;
+  }
+  @media (max-width: 1200px) {
+    display: block;
+    padding-top: 0;
+    padding-left: 20px;
+    margin: 0;
+  }
 `;

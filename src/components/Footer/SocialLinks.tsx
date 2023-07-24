@@ -73,6 +73,9 @@ const StyledSocialLinks = styled(SocialLinks)`
   td {
     padding: 0 19px 19px 19px;
   }
+  td:first-of-type {
+    padding-left: 0;
+  }
   div {
     width: 45px;
     height: 45px;
@@ -84,6 +87,9 @@ const StyledSocialLinks = styled(SocialLinks)`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width: 1200px) {
+    padding-bottom: 20px;
   }
 `;
 
