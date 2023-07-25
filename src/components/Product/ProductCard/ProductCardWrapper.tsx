@@ -3,22 +3,21 @@ import { styled } from "styled-components";
 export const ProductCardWrapper = styled.div`
   position: relative;
   width: 330px;
-  height: 400px;
+  height: 440px;
   margin: 0;
   img {
     position: absolute;
-    width: 369px;
-    height: 314px;
+    width: 330px;
+    height: 280px;
     border-radius: 30px;
-    top: -11px;
-    left: -20px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
   }
   > div {
     position: absolute;
     z-index: -1;
     top: 0;
     width: 330px;
-    height: 400px;
+    height: 440px;
     border-radius: 30px;
     background: #fff;
     box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.15);
@@ -45,6 +44,7 @@ export const ProductCardWrapper = styled.div`
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
   }
+
   @media (max-width: 450px) {
     width: 280px;
     img {

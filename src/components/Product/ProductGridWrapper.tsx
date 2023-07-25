@@ -22,6 +22,13 @@ export const ProductGridWrapper = styled.div`
     width: 150px;
     padding: 0;
     margin-left: -12px;
+    &:hover {
+      transform: scale(1.02);
+      transition: all 0.5s ease 0s;
+      -webkit-transition: all 0.5s ease 0s;
+      -moz-transition: all 0.5s ease 0s;
+      -o-transition: all 0.5s ease 0s;
+    }
   }
   @media (max-width: 1200px) {
     grid-template-columns: auto auto;
