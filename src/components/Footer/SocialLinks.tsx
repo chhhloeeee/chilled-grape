@@ -72,6 +72,7 @@ const StyledSocialLinks = styled(SocialLinks)`
   }
   td {
     padding: 0 19px 19px 19px;
+    cursor: pointer;
   }
   td:first-of-type {
     padding-left: 0;

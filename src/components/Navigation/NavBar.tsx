@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import Burger from "./Burger/Burger";
 import { useEffect, useState } from "react";
 import scrollDir from "scrolldir";
+import Arrow from "../Icons/longArrowRight.svg";
 
 interface NavBarProps {
   className?: string;
@@ -46,6 +47,10 @@ const NavBar = ({ className }: NavBarProps) => {
         margin-top: 40px;
         width: 300px;
         height: 60px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
       }
       li {
         display: flex;
@@ -90,7 +95,10 @@ const NavBar = ({ className }: NavBarProps) => {
           <a href="#pricing">Pricing</a>
         </li>
         <li>
-          <a href="#login">Login</a>
+          <a href="#login">
+            <span>Login</span>
+            <img src={Arrow} alt="Arrow Right"></img>
+          </a>
         </li>
       </StyledUl>
       <div onClick={toggleOpenBurger}>
@@ -122,6 +130,13 @@ const StyledNavBar = styled(NavBar)`
 
   li {
     float: left;
+    &:hover {
+      transform: scale(1.02);
+      transition: all 0.5s ease 0s;
+      -webkit-transition: all 0.5s ease 0s;
+      -moz-transition: all 0.5s ease 0s;
+      -o-transition: all 0.5s ease 0s;
+    }
   }
 
   a {
@@ -133,6 +148,7 @@ const StyledNavBar = styled(NavBar)`
   }
 
   li:last-of-type {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,6 +162,35 @@ const StyledNavBar = styled(NavBar)`
     height: 40px;
     flex-shrink: 0;
     color: white;
+
+    span {
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      opacity: 0;
+      top: 5px;
+      right: 0;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      transform: none;
+      span {
+        padding-right: 20px;
+        padding-left: 5px;
+      }
+      img {
+        opacity: 1;
+        right: 30px;
+      }
+    }
   }
 `;
 
