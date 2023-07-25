@@ -10,10 +10,12 @@ interface ProductCardProps {
 const ProductCard = ({ image, title, price, imageAlt }: ProductCardProps) => {
   return (
     <ProductCardWrapper>
-      <img src={image} alt={imageAlt}></img>
       <div>
-        <p>{title}</p>
-        <p>{price}</p>
+        <img src={image} alt={imageAlt}></img>
+        <div>
+          <p>{title}</p>
+          <p>{price}</p>
+        </div>
       </div>
     </ProductCardWrapper>
   );
