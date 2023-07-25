@@ -2,8 +2,8 @@ import { styled } from "styled-components";
 
 export const ProductCardWrapper = styled.div`
   position: relative;
-  width: 369px;
-  height: 440px;
+  width: 330px;
+  height: 400px;
   margin: 0;
   img {
     position: absolute;
@@ -44,5 +44,17 @@ export const ProductCardWrapper = styled.div`
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
+  }
+  @media (max-width: 450px) {
+    width: 280px;
+    img {
+      width: 310px;
+      height: 270px;
+      left: -15px;
+    }
+    > div {
+      width: 280px;
+      height: 350px;
+    }
   }
 `;
