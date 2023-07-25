@@ -46,6 +46,7 @@ const StyledCompanyLinks = styled(CompanyLinks)`
     font-size: 18px;
     font-weight: 400;
     padding: 6px;
+    cursor: pointer;
   }
   @media (max-width: 1200px) {
     padding-bottom: 20px;

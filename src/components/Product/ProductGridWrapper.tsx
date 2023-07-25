@@ -22,6 +22,7 @@ export const ProductGridWrapper = styled.div`
     width: 150px;
     padding: 0;
     margin-left: -12px;
+    cursor: pointer;
     &:hover {
       transform: scale(1.02);
       transition: all 0.5s ease 0s;
