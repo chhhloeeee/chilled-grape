@@ -122,6 +122,13 @@ const StyledNavBar = styled(NavBar)`
 
   li {
     float: left;
+    &:hover {
+      transform: scale(1.02);
+      transition: all 0.5s ease 0s;
+      -webkit-transition: all 0.5s ease 0s;
+      -moz-transition: all 0.5s ease 0s;
+      -o-transition: all 0.5s ease 0s;
+    }
   }
 
   a {
