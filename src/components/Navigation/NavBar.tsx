@@ -47,6 +47,10 @@ const NavBar = ({ className }: NavBarProps) => {
         margin-top: 40px;
         width: 300px;
         height: 60px;
+        img {
+          width: 50px;
+          height: 50px;
+        }
       }
       li {
         display: flex;
